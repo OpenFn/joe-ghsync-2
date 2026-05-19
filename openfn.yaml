@@ -6,7 +6,7 @@ project:
   id: joe-ghsync-v2
   name: joe-ghsync-v2
   forked_from:
-    event-based-workflow: app:b7976f1b304a
+    event-based-workflow: app:79db13a63e9a
 workspace:
   credentials: credentials.yaml
   dirs:

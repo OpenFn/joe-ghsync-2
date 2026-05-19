@@ -30,7 +30,7 @@ workflows:
       - id: webhook
         type: webhook
         enabled: true
-        webhook_reply: before_start
+        webhook_reply: after_completion
         openfn:
           uuid: f33ebcc9-ef80-421f-84a7-623910d99103
         next:
@@ -48,11 +48,11 @@ workflows:
       - cli:d504173e2521
       - app:130771f6b640
       - cli:9a6f0a47abdb
-      - app:b7976f1b304a
+      - app:79db13a63e9a
     openfn:
       uuid: dd8bbefe-80bd-4fe2-83c3-7756bbc8f392
       inserted_at: 2026-02-24T10:07:14Z
-      updated_at: 2026-05-19T14:45:26Z
-      lock_version: 19
+      updated_at: 2026-05-19T14:58:13Z
+      lock_version: 20
     id: event-based-workflow
     start: webhook
