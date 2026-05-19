@@ -1,15 +1,15 @@
 id: event-based-workflow
 name: Event-based workflow
 start: webhook
-options: {}
 steps:
   - id: transform-data
     name: Transform data
-    adaptor: "@openfn/language-common@latest"
+    adaptor: '@openfn/language-common@latest'
     expression: ./transform-data.js
   - id: webhook
     type: webhook
     enabled: true
+    webhook_reply: before_start
     next:
       transform-data:
         disabled: false
