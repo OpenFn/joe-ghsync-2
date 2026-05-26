@@ -3,11 +3,11 @@ project:
   endpoint: https://app.staging.openfn.org
   alias: main
   inserted_at: 2026-02-24T10:07:03Z
-  updated_at: 2026-05-22T15:11:31Z
+  updated_at: 2026-05-22T15:27:24Z
   id: joe-ghsync-v2
   name: joe-ghsync-v2
   forked_from:
-    event-based-workflow: cli:0c859668eb20
+    event-based-workflow: cli:ef480c683e19
 workspace:
   credentials: credentials.yaml
   dirs:
