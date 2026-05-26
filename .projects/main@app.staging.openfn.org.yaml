@@ -3,7 +3,7 @@ name: joe-ghsync-v2
 schema_version: '4.0'
 cli:
   forked_from:
-    event-based-workflow: cli:4d5a4d730c30
+    event-based-workflow: cli:c0a139eae6e4
 description: A project to test gh sync with cli v2
 collections: []
 channels: []
@@ -13,7 +13,7 @@ openfn:
   endpoint: https://app.staging.openfn.org
   alias: main
   inserted_at: 2026-02-24T10:07:03Z
-  updated_at: 2026-05-26T13:05:38Z
+  updated_at: 2026-05-26T18:18:50Z
 options:
   concurrency: 2
   history_retention_period: 90
@@ -27,7 +27,7 @@ workflows:
       - id: transform-data
         name: Transform data
         expression: |
-          // ii
+          // jjjj
         adaptor: '@openfn/language-common@latest'
         openfn:
           uuid: 7ca3b2ef-6846-4fce-85d6-f744f1ba732c
@@ -53,11 +53,11 @@ workflows:
       - app:130771f6b640
       - cli:9a6f0a47abdb
       - app:6efa019cb903
-      - cli:4d5a4d730c30
+      - cli:c0a139eae6e4
     openfn:
       uuid: dd8bbefe-80bd-4fe2-83c3-7756bbc8f392
       inserted_at: 2026-02-24T10:07:14Z
-      updated_at: 2026-05-26T13:05:38Z
-      lock_version: 24
+      updated_at: 2026-05-26T18:18:50Z
+      lock_version: 25
     id: event-based-workflow
     start: webhook
