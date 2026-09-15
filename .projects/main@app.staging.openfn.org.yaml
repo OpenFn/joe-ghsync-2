@@ -22,9 +22,9 @@ workflows:
     steps:
       - id: transform-data
         name: Transform data
-        expression: |2
-           llll
-          ;
+        expression: |
+          // llll
+          5566;
         adaptor: '@openfn/language-common@latest'
         openfn:
           uuid: 7ca3b2ef-6846-4fce-85d6-f744f1ba732c
@@ -53,11 +53,11 @@ workflows:
       - cli:c0a139eae6e4
       - app:072e89675aa0
       - cli:56e06a551a74
-      - app:b657504b9ef4
+      - app:e0d2f5a3392e
     openfn:
       uuid: dd8bbefe-80bd-4fe2-83c3-7756bbc8f392
       inserted_at: 2026-02-24T10:07:14Z
-      updated_at: 2026-09-15T11:04:16Z
-      lock_version: 30
+      updated_at: 2026-09-15T12:34:56Z
+      lock_version: 31
     id: event-based-workflow
     start: webhook
