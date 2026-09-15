@@ -1,12 +1,13 @@
 project:
   uuid: dc50a0d8-a4dd-434f-8ea3-70aaf0a2acaf
   endpoint: https://app.staging.openfn.org
+  alias: main
   inserted_at: 2026-02-24T10:07:03Z
-  updated_at: 2026-07-17T16:47:54Z
+  updated_at: 2026-09-15T12:54:30Z
   id: joe-ghsync-v2
   name: joe-ghsync-v2
   forked_from:
-    event-based-workflow: app:e0d2f5a3392e
+    event-based-workflow: cli:df08c901013c
 workspace:
   credentials: credentials.yaml
   dirs:
