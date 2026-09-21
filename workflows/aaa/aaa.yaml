@@ -9,7 +9,7 @@ steps:
   - id: webhook
     type: webhook
     enabled: false
-    webhook_reply: after_completion
+    webhook_reply: before_start
     next:
       transform-data:
         disabled: false

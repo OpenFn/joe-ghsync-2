@@ -1,13 +1,13 @@
 project:
-  uuid: dc50a0d8-a4dd-434f-8ea3-70aaf0a2acaf
+  uuid: 0dbe5e97-9adb-4376-b482-a415b85e67a9
   endpoint: https://app.staging.openfn.org
-  inserted_at: 2026-02-24T10:07:03Z
-  updated_at: 2026-09-15T13:13:30Z
-  id: joe-ghsync-v2
-  name: joe-ghsync-v2
+  inserted_at: 2026-09-21T13:04:15Z
+  updated_at: 2026-09-21T13:04:15Z
+  id: staging
+  name: staging
   forked_from:
-    aaa: app:12e0a9d5fd3c
-    bbb: app:c703ffa7731e
+    bbb: app:98d7a277f9df
+    aaa: app:ecd5fbce3380
 workspace:
   credentials: credentials.yaml
   dirs:
