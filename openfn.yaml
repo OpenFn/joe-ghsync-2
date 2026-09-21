@@ -6,7 +6,7 @@ project:
   id: staging
   name: staging
   forked_from:
-    bbb: app:bc0f4a188cb8
+    bbb: app:6dc2a7f7fed9
     aaa: app:ecd5fbce3380
 workspace:
   credentials: credentials.yaml
