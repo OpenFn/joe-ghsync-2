@@ -1,0 +1,16 @@
+id: bbb
+name: BBB
+start: webhook
+steps:
+  - id: webhook
+    type: webhook
+    enabled: true
+    webhook_reply: before_start
+    next:
+      x:
+        disabled: false
+        condition: always
+  - id: x
+    name: x
+    adaptor: '@openfn/language-common@latest'
+    expression: ./x.js

@@ -1,5 +1,5 @@
-id: event-based-workflow
-name: Event-based workflow
+id: aaa
+name: AAA
 start: webhook
 steps:
   - id: transform-data
