@@ -6,7 +6,7 @@ project:
   id: joe-ghsync-v2
   name: joe-ghsync-v2
   forked_from:
-    aaax: app:efc0bf26c4d7
+    aaax: app:7bcd35b5858f
     bbb: app:c703ffa7731e
 workspace:
   credentials: credentials.yaml

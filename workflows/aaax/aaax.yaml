@@ -2,15 +2,15 @@ id: aaax
 name: AAAX
 start: webhook
 steps:
-  - id: transform-data
-    name: Transform data
+  - id: transform-data-1234
+    name: Transform data 1234
     adaptor: '@openfn/language-common@latest'
-    expression: ./transform-data.js
+    expression: ./transform-data-1234.js
   - id: webhook
     type: webhook
     enabled: false
     webhook_reply: after_completion
     next:
-      transform-data:
+      transform-data-1234:
         disabled: false
         condition: always
