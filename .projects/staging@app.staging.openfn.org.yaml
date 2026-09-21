@@ -35,17 +35,20 @@ workflows:
               uuid: ada59cb4-8103-48dc-8afd-8509f3086081
       - id: x
         name: x
-        expression: fn(s => s)
+        expression: |-
+          // diff
+          fn(s => s)
         adaptor: '@openfn/language-common@latest'
         openfn:
           uuid: a2f10a60-e3c9-4d62-9e7c-424219925b8b
     history:
       - app:c703ffa7731e
+      - app:98d7a277f9df
     openfn:
       uuid: e0a21501-20d2-49dd-b5c0-1b52f4edf3f4
       inserted_at: 2026-09-21T13:04:15Z
-      updated_at: 2026-09-21T13:04:15Z
-      lock_version: 1
+      updated_at: 2026-09-21T13:21:41Z
+      lock_version: 2
     id: bbb
     start: webhook
   - name: AAA
