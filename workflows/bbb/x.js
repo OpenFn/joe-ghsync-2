@@ -1,2 +1,2 @@
-// diff 2
+// diff 3
 fn(s => s)
