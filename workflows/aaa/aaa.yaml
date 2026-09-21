@@ -1,5 +1,5 @@
-id: event-based-workflow
-name: Event-based workflow
+id: aaa
+name: AAA
 start: webhook
 steps:
   - id: transform-data
@@ -9,7 +9,7 @@ steps:
   - id: webhook
     type: webhook
     enabled: false
-    webhook_reply: after_completion
+    webhook_reply: before_start
     next:
       transform-data:
         disabled: false
