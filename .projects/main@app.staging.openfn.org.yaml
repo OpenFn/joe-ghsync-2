@@ -1,6 +1,10 @@
 id: joe-ghsync-v2
 name: joe-ghsync-v2
 schema_version: '4.0'
+cli:
+  forked_from:
+    aaax: app:7bcd35b5858f
+    bbb: app:c703ffa7731e
 description: A project to test gh sync with cli v2
 collections: []
 channels:
@@ -35,9 +39,9 @@ workflows:
           uuid: 7ca3b2ef-6846-4fce-85d6-f744f1ba732c
       - id: webhook
         type: webhook
+        enabled: false
         webhook_reply: after_completion
         openfn:
-          enabled: false
           uuid: f33ebcc9-ef80-421f-84a7-623910d99103
         next:
           transform-data-1234:
@@ -74,9 +78,9 @@ workflows:
     steps:
       - id: webhook
         type: webhook
+        enabled: true
         webhook_reply: before_start
         openfn:
-          enabled: true
           uuid: 28be6bd9-4a28-48b2-8c26-12399fde24e0
         next:
           x:
