@@ -3,7 +3,12 @@ name: joe-ghsync-v2
 schema_version: '4.0'
 description: A project to test gh sync with cli v2
 collections: []
-channels: []
+channels:
+  - enabled: true
+    id: a1a52606-cf15-490d-902b-cc84f03df0dc
+    name: joe
+    destination_url: https://www.joe.test.com/
+    destination_credential_id: null
 credentials: []
 openfn:
   uuid: dc50a0d8-a4dd-434f-8ea3-70aaf0a2acaf
