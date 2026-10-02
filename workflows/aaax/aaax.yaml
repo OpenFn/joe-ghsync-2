@@ -8,7 +8,6 @@ steps:
     expression: ./transform-data-1234.js
   - id: webhook
     type: webhook
-    enabled: false
     webhook_reply: after_completion
     next:
       transform-data-1234:

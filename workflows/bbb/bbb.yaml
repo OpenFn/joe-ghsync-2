@@ -4,7 +4,6 @@ start: webhook
 steps:
   - id: webhook
     type: webhook
-    enabled: true
     webhook_reply: before_start
     next:
       x:

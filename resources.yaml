@@ -1,0 +1,5 @@
+channels:
+  joe:
+    name: joe
+    destination_url: https://www.joe.test.com/
+    enabled: true
