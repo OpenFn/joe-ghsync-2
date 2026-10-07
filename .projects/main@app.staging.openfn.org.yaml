@@ -1,24 +1,20 @@
 id: joe-ghsync-v2
 name: joe-ghsync-v2
 schema_version: '4.0'
-cli:
-  forked_from:
-    aaax: app:7bcd35b5858f
-    bbb: app:c703ffa7731e
 description: A project to test gh sync with cli v2
 collections: []
 channels:
   - enabled: true
     id: a1a52606-cf15-490d-902b-cc84f03df0dc
     name: joe
-    destination_url: https://www.joe.test.com/
+    destination_url: https://www.joe.test.com/12345
     destination_credential_id: null
 credentials: []
 openfn:
   uuid: dc50a0d8-a4dd-434f-8ea3-70aaf0a2acaf
   endpoint: https://app.staging.openfn.org
   inserted_at: 2026-02-24T10:07:03Z
-  updated_at: 2026-09-15T13:13:30Z
+  updated_at: 2026-10-02T16:51:00Z
 options:
   concurrency: 2
   history_retention_period: 90
@@ -32,16 +28,16 @@ workflows:
       - id: transform-data-1234
         name: Transform data 1234
         expression: |
-          // llll JAM
+          // llll JAM1
           556688;
         adaptor: '@openfn/language-common@latest'
         openfn:
           uuid: 7ca3b2ef-6846-4fce-85d6-f744f1ba732c
       - id: webhook
         type: webhook
-        enabled: false
         webhook_reply: after_completion
         openfn:
+          enabled: false
           uuid: f33ebcc9-ef80-421f-84a7-623910d99103
         next:
           transform-data-1234:
@@ -67,20 +63,21 @@ workflows:
       - app:e0d2f5a3392e
       - cli:1d9750ed039e
       - app:7bcd35b5858f
+      - cli:6f80191a46d0
     openfn:
       uuid: dd8bbefe-80bd-4fe2-83c3-7756bbc8f392
       inserted_at: 2026-02-24T10:07:14Z
-      updated_at: 2026-09-21T14:01:20Z
-      lock_version: 40
+      updated_at: 2026-10-02T16:51:00Z
+      lock_version: 41
     id: aaax
     start: webhook
   - name: BBB
     steps:
       - id: webhook
         type: webhook
-        enabled: true
         webhook_reply: before_start
         openfn:
+          enabled: true
           uuid: 28be6bd9-4a28-48b2-8c26-12399fde24e0
         next:
           x:
