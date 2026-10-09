@@ -103,3 +103,35 @@ workflows:
       lock_version: 6
     id: bbb
     start: webhook
+  - name: jam
+    steps:
+      - id: untitled-step
+        name: Untitled step
+        expression: |
+          // Check out the Job Writing Guide for help getting started:
+          // https://docs.openfn.org/documentation/jobs/job-writing-guide
+        adaptor: '@openfn/language-common@latest'
+        openfn:
+          uuid: 87d79ff0-a7c1-4a9e-882f-ba88ea555e58
+      - id: webhook
+        type: webhook
+        webhook_reply: after_completion
+        openfn:
+          enabled: true
+          uuid: 70cabcfa-0c3d-4b1c-8425-2087e0030ad4
+        next:
+          untitled-step:
+            disabled: false
+            condition: always
+            openfn:
+              uuid: eacaeb6e-3f53-4fe2-8c68-9b5a038e392f
+    history:
+      - app:b460807138bf
+      - app:d4c7f23187fb
+    openfn:
+      uuid: 887f570d-6475-415f-b266-6a06d8f6c8c1
+      inserted_at: 2026-10-08T12:40:38Z
+      updated_at: 2026-10-08T12:44:24Z
+      lock_version: 3
+    id: jam
+    start: webhook
