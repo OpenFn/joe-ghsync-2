@@ -1,5 +1,6 @@
 channels:
   joe:
     name: joe
-    destination_url: https://www.joe.test.com/1234
+    destination_url: https://www.joe.test.com/12345
     enabled: true
+collections: {}

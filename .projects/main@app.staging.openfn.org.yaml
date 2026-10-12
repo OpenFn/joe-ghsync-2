@@ -1,24 +1,20 @@
 id: joe-ghsync-v2
 name: joe-ghsync-v2
 schema_version: '4.0'
-cli:
-  forked_from:
-    aaax: app:7bcd35b5858f
-    bbb: app:c703ffa7731e
 description: A project to test gh sync with cli v2
 collections: []
 channels:
   - enabled: true
     id: a1a52606-cf15-490d-902b-cc84f03df0dc
     name: joe
-    destination_url: https://www.joe.test.com/
+    destination_url: https://www.joe.test.com/12345
     destination_credential_id: null
 credentials: []
 openfn:
   uuid: dc50a0d8-a4dd-434f-8ea3-70aaf0a2acaf
   endpoint: https://app.staging.openfn.org
   inserted_at: 2026-02-24T10:07:03Z
-  updated_at: 2026-09-15T13:13:30Z
+  updated_at: 2026-10-07T10:28:06Z
 options:
   concurrency: 2
   history_retention_period: 90
@@ -32,16 +28,17 @@ workflows:
       - id: transform-data-1234
         name: Transform data 1234
         expression: |
-          // llll JAM
+          // llll JAM1
           556688;
+          // jam
         adaptor: '@openfn/language-common@latest'
         openfn:
           uuid: 7ca3b2ef-6846-4fce-85d6-f744f1ba732c
       - id: webhook
         type: webhook
-        enabled: false
         webhook_reply: after_completion
         openfn:
+          enabled: false
           uuid: f33ebcc9-ef80-421f-84a7-623910d99103
         next:
           transform-data-1234:
@@ -67,20 +64,22 @@ workflows:
       - app:e0d2f5a3392e
       - cli:1d9750ed039e
       - app:7bcd35b5858f
+      - cli:6f80191a46d0
+      - app:a2c78985faf0
     openfn:
       uuid: dd8bbefe-80bd-4fe2-83c3-7756bbc8f392
       inserted_at: 2026-02-24T10:07:14Z
-      updated_at: 2026-09-21T14:01:20Z
-      lock_version: 40
+      updated_at: 2026-10-12T13:30:01Z
+      lock_version: 42
     id: aaax
     start: webhook
   - name: BBB
     steps:
       - id: webhook
         type: webhook
-        enabled: true
         webhook_reply: before_start
         openfn:
+          enabled: true
           uuid: 28be6bd9-4a28-48b2-8c26-12399fde24e0
         next:
           x:
@@ -97,10 +96,44 @@ workflows:
     history:
       - app:b460807138bf
       - app:c703ffa7731e
+      - cli:e2c9790bdbe7
+      - app:c703ffa7731e
     openfn:
       uuid: dc1dafef-df73-447d-b5b4-fc5dcb6b3689
       inserted_at: 2026-09-21T13:03:46Z
-      updated_at: 2026-09-21T13:04:02Z
-      lock_version: 4
+      updated_at: 2026-10-07T10:28:12Z
+      lock_version: 6
     id: bbb
+    start: webhook
+  - name: jam
+    steps:
+      - id: untitled-step
+        name: Untitled step
+        expression: |
+          // Check out the Job Writing Guide for help getting started:
+          // https://docs.openfn.org/documentation/jobs/job-writing-guide
+        adaptor: '@openfn/language-common@latest'
+        openfn:
+          uuid: 87d79ff0-a7c1-4a9e-882f-ba88ea555e58
+      - id: webhook
+        type: webhook
+        webhook_reply: after_completion
+        openfn:
+          enabled: true
+          uuid: 70cabcfa-0c3d-4b1c-8425-2087e0030ad4
+        next:
+          untitled-step:
+            disabled: false
+            condition: always
+            openfn:
+              uuid: eacaeb6e-3f53-4fe2-8c68-9b5a038e392f
+    history:
+      - app:b460807138bf
+      - app:d4c7f23187fb
+    openfn:
+      uuid: 887f570d-6475-415f-b266-6a06d8f6c8c1
+      inserted_at: 2026-10-08T12:40:38Z
+      updated_at: 2026-10-08T12:44:24Z
+      lock_version: 3
+    id: jam
     start: webhook
