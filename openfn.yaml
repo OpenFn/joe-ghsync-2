@@ -1,22 +1,8 @@
-project:
-  alias: main
-  endpoint: https://app.staging.openfn.org
-  forked_from:
-    aaax: app:a2c78985faf0
-    bbb: app:c703ffa7731e
-    jam: app:d4c7f23187fb
-  id: joe-ghsync-v2
-  inserted_at: 2026-02-24T10:07:03Z
-  name: joe-ghsync-v2
-  updated_at: 2026-10-07T10:28:06Z
-  uuid: dc50a0d8-a4dd-434f-8ea3-70aaf0a2acaf
-
-workspace:
-  credentials: credentials.yaml
-  dirs:
-    projects: .projects
-    workflows: workflows
-  formats:
-    openfn: yaml
-    project: yaml
-    workflow: yaml
+credentials: credentials.yaml
+dirs:
+  projects: .projects
+  workflows: workflows
+formats:
+  openfn: yaml
+  project: yaml
+  workflow: yaml

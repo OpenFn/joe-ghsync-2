@@ -1,0 +1,11 @@
+alias: main
+endpoint: https://app.staging.openfn.org
+forked_from:
+  aaax: cli:4f0dd5e7c358
+  bbb: app:c703ffa7731e
+  jam: app:d4c7f23187fb
+id: joe-ghsync-v2
+inserted_at: 2026-02-24T10:07:03Z
+name: joe-ghsync-v2
+updated_at: 2026-10-12T14:49:11Z
+uuid: dc50a0d8-a4dd-434f-8ea3-70aaf0a2acaf
