@@ -1,11 +1,6 @@
 id: joe-ghsync-v2
 name: joe-ghsync-v2
 schema_version: '4.0'
-cli:
-  forked_from:
-    aaax: cli:a1f3472080fa
-    bbb: app:c703ffa7731e
-    jam: app:d4c7f23187fb
 description: A project to test gh sync with cli v2
 collections: []
 channels:
@@ -36,6 +31,7 @@ workflows:
           // llll JAM1
           556688;
           // jam 1234 678
+          /// doo be doo
         adaptor: '@openfn/language-common@latest'
         openfn:
           uuid: 7ca3b2ef-6846-4fce-85d6-f744f1ba732c
@@ -76,11 +72,12 @@ workflows:
       - cli:4f0dd5e7c358
       - app:dec4e9c694f4
       - cli:a1f3472080fa
+      - app:174435e562b9
     openfn:
       uuid: dd8bbefe-80bd-4fe2-83c3-7756bbc8f392
       inserted_at: 2026-02-24T10:07:14Z
-      updated_at: 2026-10-12T16:23:09Z
-      lock_version: 47
+      updated_at: 2026-10-12T16:23:53Z
+      lock_version: 48
     id: aaax
     start: webhook
   - name: BBB
