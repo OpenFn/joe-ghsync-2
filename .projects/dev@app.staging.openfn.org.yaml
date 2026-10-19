@@ -1,0 +1,88 @@
+id: dev
+name: dev
+schema_version: '4.0'
+description: A project to test gh sync with cli v2
+collections: []
+channels: []
+credentials: []
+openfn:
+  uuid: 89bd25e4-fce7-4f6a-9c10-9e30d4e78357
+  endpoint: https://app.staging.openfn.org
+  inserted_at: 2026-10-07T10:28:54Z
+  updated_at: 2026-10-07T10:28:54Z
+options:
+  env: dev
+  color: '#d6e819'
+  history_retention_period: 90
+  dataclip_retention_period: 90
+  retention_policy: retain_all
+  allow_support_access: false
+  requires_mfa: false
+workflows:
+  - name: BBB
+    steps:
+      - id: webhook
+        type: webhook
+        webhook_reply: before_start
+        openfn:
+          enabled: false
+          uuid: d564aa1d-7d17-48e8-9c17-1c2a3326b83b
+        next:
+          x:
+            disabled: false
+            condition: always
+            openfn:
+              uuid: 0dc36ccb-5c24-4320-8719-066698eaac50
+      - id: x
+        name: x
+        expression: |-
+          fn(s => s)
+          // wobble
+        adaptor: '@openfn/language-common@latest'
+        openfn:
+          uuid: d2951e98-f176-494c-a7c0-bf43434130d5
+    history:
+      - app:c703ffa7731e
+      - app:eb11a2321108
+    openfn:
+      uuid: d7c8b216-5fc1-44cd-bfdd-a5107959c3c8
+      inserted_at: 2026-10-07T10:28:54Z
+      updated_at: 2026-10-07T10:29:53Z
+      lock_version: 2
+    id: bbb
+    start: webhook
+  - name: AAAX
+    steps:
+      - id: transform-data-1234
+        name: Transform data 1234
+        expression: |-
+          // llll JAM1
+          556688;
+          // wibble
+        adaptor: '@openfn/language-common@latest'
+        openfn:
+          uuid: 5576f3ef-007b-462e-84e9-059d54d01db3
+      - id: webhook
+        type: webhook
+        webhook_reply: before_start
+        openfn:
+          enabled: false
+          uuid: 400661fe-074d-4ce4-bad8-3017f67779cb
+        next:
+          transform-data-1234:
+            disabled: false
+            condition: always
+            openfn:
+              uuid: 90b44c3a-1114-4fc3-9b44-0bc73d8c1842
+    history:
+      - cli:6f80191a46d0
+      - app:f2074d62f64a
+    openfn:
+      uuid: f31e90e2-e8ad-46fd-8645-86def0709d24
+      inserted_at: 2026-10-07T10:28:54Z
+      updated_at: 2026-10-07T10:29:37Z
+      lock_version: 2
+    id: aaax
+    start: webhook
+sandbox:
+  parentId: dc50a0d8-a4dd-434f-8ea3-70aaf0a2acaf
