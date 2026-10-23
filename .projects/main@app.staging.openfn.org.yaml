@@ -1,6 +1,11 @@
 id: joe-ghsync-v2
 name: joe-ghsync-v2
 schema_version: '4.0'
+cli:
+  forked_from:
+    aaax123xyz: cli:08219f57ad3d
+    bbb: app:c703ffa7731e
+    jam: app:d4c7f23187fb
 description: A project to test gh sync with cli v2
 collections: []
 channels:
@@ -14,7 +19,7 @@ openfn:
   uuid: dc50a0d8-a4dd-434f-8ea3-70aaf0a2acaf
   endpoint: https://app.staging.openfn.org
   inserted_at: 2026-02-24T10:07:03Z
-  updated_at: 2026-10-23T11:17:15Z
+  updated_at: 2026-10-23T14:31:35Z
 options:
   concurrency: 2
   history_retention_period: 90
@@ -30,6 +35,7 @@ workflows:
         expression: |
           fn((s) => s);
           // jam 4444
+          // hi megan
         adaptor: '@openfn/language-common@latest'
         openfn:
           uuid: 7ca3b2ef-6846-4fce-85d6-f744f1ba732c
@@ -75,11 +81,12 @@ workflows:
       - app:9b30862706ca
       - cli:8837622688c4
       - app:23aa25c84435
+      - cli:08219f57ad3d
     openfn:
       uuid: dd8bbefe-80bd-4fe2-83c3-7756bbc8f392
       inserted_at: 2026-02-24T10:07:14Z
-      updated_at: 2026-10-23T11:17:52Z
-      lock_version: 53
+      updated_at: 2026-10-23T14:31:35Z
+      lock_version: 54
     id: aaax123xyz
     start: webhook
   - name: BBB
