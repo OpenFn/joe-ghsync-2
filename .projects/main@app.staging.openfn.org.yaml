@@ -1,13 +1,10 @@
 id: joe-ghsync-v2
 name: joe-ghsync-v2
 schema_version: '4.0'
-cli:
-  forked_from:
-    aaax123xyz: cli:08219f57ad3d
-    bbb: app:c703ffa7731e
-    jam: app:d4c7f23187fb
 description: A project to test gh sync with cli v2
-collections: []
+collections:
+  - uuid: 87e44548-398d-4950-a7ee-2e693dc4357a
+    name: jam
 channels:
   - enabled: true
     id: a1a52606-cf15-490d-902b-cc84f03df0dc
