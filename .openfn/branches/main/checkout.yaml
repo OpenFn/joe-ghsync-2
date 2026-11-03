@@ -1,7 +1,7 @@
 alias: jam
 endpoint: https://app.staging.openfn.org
 forked_from:
-  aaax: cli:08219f57ad3d
+  aaax: app:5400e300ae0c
   bbb: app:c703ffa7731e
   jam: app:d4c7f23187fb
 id: joe-ghsync-v2
