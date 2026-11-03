@@ -1,0 +1,15 @@
+alias: testytest
+endpoint: https://app.staging.openfn.org
+forked_from:
+  aaax123xyz: app:5400e300ae0c
+  bbb: app:c703ffa7731e
+  jam: app:d4c7f23187fb
+id: test
+inserted_at: 2026-11-03T15:47:16Z
+name: test
+updated_at: 2026-11-03T15:47:16Z
+uuid: 5257b4e1-abe6-4756-8760-ee7cbab81be8
+workflow_uuids:
+  aaax123xyz: b067615b-821e-4f9a-8650-129da3d5b069
+  bbb: 56362daf-e22a-409b-8084-5c337ff0fc4d
+  jam: 469e6aba-ee02-4670-b2e8-a301c2decc6d

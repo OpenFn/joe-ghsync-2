@@ -1,7 +1,3 @@
-channels:
-  joe:
-    name: joe
-    destination_url: https://www.joe.test.com/12345
-    enabled: true
+channels: {}
 collections:
   jam: {}
